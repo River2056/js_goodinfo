@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const config = require('../config/botConfig.json');
+const config = require('../config/jobConfig.json');
 const eventEmitter = require('./appEvents');
 const { ToadScheduler, SimpleIntervalJob, Task } = require('toad-scheduler');
 const { jobOptions } = require('./helper');
