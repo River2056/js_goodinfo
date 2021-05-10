@@ -21,6 +21,6 @@ const updateSnapShots = new Task('update-snapshots', () => {
 const clearJob = new SimpleIntervalJob(jobOptions(config), clearServerFiles);
 const updateJob = new SimpleIntervalJob(jobOptions(config), updateSnapShots);
 scheduler.addSimpleIntervalJob(clearJob);
-scheduler.addSimpleIntervalJob(updateJob);
+// scheduler.addSimpleIntervalJob(updateJob);
 
 module.exports = scheduler;
